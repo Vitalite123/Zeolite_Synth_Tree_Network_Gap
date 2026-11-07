@@ -1,0 +1,3 @@
+﻿exp_id,model,config_id,seed,fraction,n_params,train_val_gap,test_acc,test_precision_macro,test_recall_macro,test_macro_f1,test_weighted_f1,test_top3,test_top5,test_top10,head_f1,torso_f1,tail_f1,notes
+E1_1,LeNet-5,default_config,42,1.0,3739111,0.0135,0.7611,0.6389,0.6589,0.6342,0.758,0.9273,0.9477,0.9727,0.7342,0.6275,0.026,"original script default hyperparams, rerun under the unified protocol"
+E1_1,LeNet-5,tuned_trial20,42,1.0,3739111,0.0033,0.7558,0.6662,0.6716,0.6504,0.7513,0.9201,0.9485,0.9724,0.7337,0.6238,0.039,"Optuna TPE 50 trials, val MacroF1=0.7132"

@@ -1,0 +1,3 @@
+exp_id,model,config_id,seed,fraction,n_params,train_val_gap,test_acc,test_precision_macro,test_recall_macro,test_macro_f1,test_weighted_f1,test_top3,test_top5,test_top10,head_f1,torso_f1,tail_f1,notes
+E2.2,TabNet-104,tabnet_default,42,1.0,13576,,0.5036,0.2961,0.3202,0.2828,0.4523,0.7141,0.8061,0.8845,0.3831,0.2252,0.013,pytorch-tabnet library default hyperparams (batch 512)
+E2.2,TabNet-104,tuned_trial29,42,1.0,182856,,0.6986,0.593,0.5818,0.562,0.69,0.8803,0.9243,0.958,0.6702,0.5236,0.026,"Optuna TPE 50trials, val MacroF1=0.6005"

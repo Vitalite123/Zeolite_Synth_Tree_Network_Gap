@@ -1,0 +1,21 @@
+﻿metric,value
+test_n,2641
+impurity_1nn,0.25293449450965544
+impurity_5nn,0.6418023475956077
+purity_mean,0.6327148807269973
+missing_rate,0.046951912154486936
+missing_test_n,124
+missing_train_rate,0.04737975592246949
+missing_train_n,594
+missing_features_test,"{""osda1_free_sasa_mean_0"": 110, ""osda1_asphericity_mean_0"": 110, ""osda1_bertz_ct_mean_0"": 110, ""osda1_box_mean_1"": 110, ""osda1_box_mean_0"": 110, ""osda1_axes_mean_1"": 110, ""osda1_axes_mean_0"": 110, ""osda1_eccentricity_mean_0"": 110, ""osda1_getaway_mean_1"": 110, ""osda1_getaway_mean_0"": 110, ""osda1_box_mean_2"": 110, ""osda2_axes_mean_0"": 11, ""osda2_eccentricity_mean_0"": 11, ""osda2_asphericity_mean_0"": 11, ""osda2_free_sasa_mean_0"": 11, ""osda2_bertz_ct_mean_0"": 11, ""osda2_box_mean_1"": 11, ""osda2_box_mean_0"": 11, ""osda2_axes_mean_1"": 11, ""osda2_box_mean_2"": 11, ""osda2_getaway_mean_0"": 11, ""osda2_getaway_mean_1"": 11, ""osda3_box_mean_2"": 3, ""osda3_getaway_mean_0"": 3, ""osda3_axes_mean_0"": 3, ""osda3_eccentricity_mean_0"": 3, ""osda3_asphericity_mean_0"": 3, ""osda3_free_sasa_mean_0"": 3, ""osda3_bertz_ct_mean_0"": 3, ""osda3_box_mean_1"": 3, ""osda3_box_mean_0"": 3, ""osda3_axes_mean_1"": 3, ""osda3_getaway_mean_1"": 3}"
+duplicate_train,"{""n_unique"": 11696, ""n_samples"": 12537, ""duplicate_groups"": 617, ""duplicate_samples"": 1458, ""conflict_groups"": 104, ""conflict_samples"": 266}"
+exact_duplicate_test,209
+exact_duplicate_conflict_test,26
+purity_bins,"{""5/5"": 946, ""4/5"": 414, ""3/5"": 335, ""2/5"": 334, ""1/5"": 296, ""0/5"": 316}"
+error_overlap.both_correct,0.7592
+error_overlap.only_xgb,0.0761
+error_overlap.only_ann,0.0341
+error_overlap.both_wrong,0.1306
+error_overlap.error_jaccard,0.5425
+error_overlap.both_wrong_pure,0.0
+error_overlap.both_wrong_impure,0.2035

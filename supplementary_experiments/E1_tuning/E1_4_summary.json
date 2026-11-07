@@ -1,0 +1,83 @@
+{
+  "exp_id": "E1.4",
+  "model": "XGBoost-104",
+  "protocol": "Supplementary experiment plan sections 1+2.4",
+  "n_trials": 50,
+  "finished_trials": 50,
+  "pruned_trials": 0,
+  "seed": 42,
+  "search_space": {
+    "n_estimators": "int 100-1000 (log)",
+    "max_depth": "int 3-12",
+    "learning_rate": "float 0.01-0.3 (log)",
+    "subsample": "float 0.6-1.0",
+    "colsample_bytree": "float 0.6-1.0",
+    "min_child_weight": "float 1-20 (log)",
+    "reg_lambda": "float 1e-3-10 (log)",
+    "gamma": "Fixed 0.1 (baseline value)",
+    "reg_alpha": "Fixed 0.1 (baseline value)"
+  },
+  "baseline": {
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 10,
+      "learning_rate": 0.05,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "min_child_weight": 3,
+      "gamma": 0.1,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.0
+    },
+    "val": {
+      "acc": 0.8299242424242425,
+      "macro_f1": 0.7592961338011065,
+      "weighted_f1": 0.8270911547204114,
+      "top5": 0.9662878787878788,
+      "best_iteration": 299
+    },
+    "test": {
+      "acc": 0.8315032184778492,
+      "macro_f1": 0.7396911284005127,
+      "weighted_f1": 0.8277968260628799,
+      "top5": 0.9716016660355926,
+      "best_iteration": 299
+    },
+    "reported_acc": 0.8315
+  },
+  "tuned": {
+    "trial_number": 38,
+    "params": {
+      "n_estimators": 711,
+      "max_depth": 6,
+      "learning_rate": 0.06978616874884501,
+      "subsample": 0.7716463926964888,
+      "colsample_bytree": 0.6251879220064277,
+      "min_child_weight": 1.1695151024925308,
+      "reg_lambda": 0.17780364724127884,
+      "gamma": 0.1,
+      "reg_alpha": 0.1
+    },
+    "val": {
+      "acc": 0.8314393939393939,
+      "macro_f1": 0.7884997628165844,
+      "weighted_f1": 0.8290143761878612,
+      "top5": 0.968560606060606,
+      "best_iteration": 297
+    },
+    "test": {
+      "acc": 0.8352896630064369,
+      "macro_f1": 0.7246780199814983,
+      "weighted_f1": 0.8329912513701632,
+      "top5": 0.9746308216584627,
+      "best_iteration": 297
+    }
+  },
+  "delta_test": {
+    "acc": 0.0037864445285876736,
+    "macro_f1": -0.015013108419014376,
+    "weighted_f1": 0.005194425307283312,
+    "top5": 0.0030291556228700944
+  },
+  "wall_time_sec": 5786.1
+}

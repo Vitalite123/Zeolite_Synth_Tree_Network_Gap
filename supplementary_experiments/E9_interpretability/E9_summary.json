@@ -1,0 +1,580 @@
+{
+  "exp_id": "E9",
+  "tag": "",
+  "seed": 42,
+  "device": "cuda",
+  "config": {
+    "n_explain": 384,
+    "n_background": 64,
+    "perm_repeats": 3,
+    "gradientshap_nsamples": 32,
+    "fidelity_nsamples": 256
+  },
+  "category_counts": {
+    "Composition": 52,
+    "OSDA": 46,
+    "Synthesis Conditions": 6
+  },
+  "sanity": [
+    {
+      "model": "XGBoost-104",
+      "test_acc": 0.8352896630064369,
+      "ref_acc": 0.8352896630064369,
+      "delta_pp": 0.0
+    },
+    {
+      "model": "BiGRU",
+      "test_acc": 0.793260128739114,
+      "ref_acc": 0.7933,
+      "delta_pp": -0.003987126088600412
+    },
+    {
+      "model": "FT-Transformer",
+      "test_acc": 0.78833775085195,
+      "ref_acc": 0.7883,
+      "delta_pp": 0.0037750851950013598
+    },
+    {
+      "model": "LeNet-5",
+      "test_acc": 0.7557743279060962,
+      "ref_acc": 0.7558,
+      "delta_pp": -0.002567209390380576
+    },
+    {
+      "model": "Transformer",
+      "test_acc": 0.7762211283604695,
+      "ref_acc": 0.7762,
+      "delta_pp": 0.0021128360469524488
+    }
+  ],
+  "shap_fidelity_spearman": {
+    "BiGRU": 0.6904258853035297,
+    "FT-Transformer": 0.7195318080554219
+  },
+  "category_summary": [
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.41059027777777873,
+      "importance_ratio_pct": 43.0783242258652,
+      "mean_importance_per_feature": 0.007895966880341899,
+      "top_feature": "Ge"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.4071180555555565,
+      "importance_ratio_pct": 42.71402550091074,
+      "mean_importance_per_feature": 0.008850392512077315,
+      "top_feature": "osda_total_volume"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.13541666666666693,
+      "importance_ratio_pct": 14.207650273224036,
+      "mean_importance_per_feature": 0.02256944444444449,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 3.5532188528886763,
+      "importance_ratio_pct": 44.70078058360927,
+      "mean_importance_per_feature": 0.06833113178632069,
+      "top_feature": "Gel_Si_Al"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 3.3583097883707183,
+      "importance_ratio_pct": 42.24875393186204,
+      "mean_importance_per_feature": 0.07300673452979822,
+      "top_feature": "osda1_index"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 1.0373680144548416,
+      "importance_ratio_pct": 13.05046548452869,
+      "mean_importance_per_feature": 0.17289466907580694,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.6831597222222223,
+      "importance_ratio_pct": 33.76233376233377,
+      "mean_importance_per_feature": 0.013137686965811968,
+      "top_feature": "Si"
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 1.0156249999999998,
+      "importance_ratio_pct": 50.19305019305018,
+      "mean_importance_per_feature": 0.02207880434782608,
+      "top_feature": "osda1_index"
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.3246527777777778,
+      "importance_ratio_pct": 16.044616044616046,
+      "mean_importance_per_feature": 0.0541087962962963,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 4.4043733461958245,
+      "importance_ratio_pct": 28.145210086278148,
+      "mean_importance_per_feature": 0.08469948742684277,
+      "top_feature": "Al"
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 8.999679726664747,
+      "importance_ratio_pct": 57.51053707446889,
+      "mean_importance_per_feature": 0.1956452114492336,
+      "top_feature": "osda_total_volume"
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 2.244696155496134,
+      "importance_ratio_pct": 14.344252839252972,
+      "mean_importance_per_feature": 0.37411602591602233,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "BiGRU",
+      "method": "attention",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.7328661056235433,
+      "importance_ratio_pct": 73.2866110060019,
+      "mean_importance_per_feature": 0.01409357895429891,
+      "top_feature": "K"
+    },
+    {
+      "model": "BiGRU",
+      "method": "attention",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.24529132107272744,
+      "importance_ratio_pct": 24.52913225576222,
+      "mean_importance_per_feature": 0.005332420023320162,
+      "top_feature": "osda1_index"
+    },
+    {
+      "model": "BiGRU",
+      "method": "attention",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.02184256725013256,
+      "importance_ratio_pct": 2.1842567382358657,
+      "mean_importance_per_feature": 0.0036404278750220933,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.7317708333333333,
+      "importance_ratio_pct": 41.162109375,
+      "mean_importance_per_feature": 0.014072516025641024,
+      "top_feature": "Ge"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.7317708333333333,
+      "importance_ratio_pct": 41.162109375,
+      "mean_importance_per_feature": 0.015908061594202896,
+      "top_feature": "osda_total_volume"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.3142361111111111,
+      "importance_ratio_pct": 17.67578125,
+      "mean_importance_per_feature": 0.05237268518518518,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 7.526343526741768,
+      "importance_ratio_pct": 35.02656196985927,
+      "mean_importance_per_feature": 0.14473737551426477,
+      "top_feature": "Na"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 11.079347671564278,
+      "importance_ratio_pct": 51.56175192174125,
+      "mean_importance_per_feature": 0.24085538416444083,
+      "top_feature": "osda1_index"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 2.881840273433223,
+      "importance_ratio_pct": 13.411686108399486,
+      "mean_importance_per_feature": 0.4803067122388705,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "attention",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.4911531647667289,
+      "importance_ratio_pct": 49.66696056459538,
+      "mean_importance_per_feature": 0.00944525316859094,
+      "top_feature": "Si"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "attention",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.43334909761324525,
+      "importance_ratio_pct": 43.82163057441025,
+      "mean_importance_per_feature": 0.00942063255680968,
+      "top_feature": "osda3_index"
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "attention",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.0643908753991127,
+      "importance_ratio_pct": 6.511408860994368,
+      "mean_importance_per_feature": 0.010731812566518784,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "LeNet-5",
+      "method": "permutation",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.7369791666666675,
+      "importance_ratio_pct": 35.25747508305648,
+      "mean_importance_per_feature": 0.014172676282051298,
+      "top_feature": "Ge"
+    },
+    {
+      "model": "LeNet-5",
+      "method": "permutation",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 1.002604166666668,
+      "importance_ratio_pct": 47.965116279069775,
+      "mean_importance_per_feature": 0.02179574275362322,
+      "top_feature": "osda1_index"
+    },
+    {
+      "model": "LeNet-5",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.3506944444444446,
+      "importance_ratio_pct": 16.77740863787374,
+      "mean_importance_per_feature": 0.0584490740740741,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "Transformer",
+      "method": "permutation",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.9001736111111123,
+      "importance_ratio_pct": 28.95839151075119,
+      "mean_importance_per_feature": 0.017311030982906005,
+      "top_feature": "Na"
+    },
+    {
+      "model": "Transformer",
+      "method": "permutation",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 1.75434027777778,
+      "importance_ratio_pct": 56.4367495113097,
+      "mean_importance_per_feature": 0.03813783212560391,
+      "top_feature": "osda_total_volume"
+    },
+    {
+      "model": "Transformer",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.45399305555555575,
+      "importance_ratio_pct": 14.604858977939115,
+      "mean_importance_per_feature": 0.07566550925925929,
+      "top_feature": "rotation"
+    },
+    {
+      "model": "TabNet",
+      "method": "attention",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.378822326366463,
+      "importance_ratio_pct": 37.88223263664645,
+      "mean_importance_per_feature": 0.007285044737816596,
+      "top_feature": "Gel_Si_Al"
+    },
+    {
+      "model": "TabNet",
+      "method": "attention",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.4716454343135597,
+      "importance_ratio_pct": 47.16454343135616,
+      "mean_importance_per_feature": 0.010253161615512167,
+      "top_feature": "osda1_axes_mean_0"
+    },
+    {
+      "model": "TabNet",
+      "method": "attention",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.1495322393199734,
+      "importance_ratio_pct": 14.9532239319974,
+      "mean_importance_per_feature": 0.024922039886662233,
+      "top_feature": "cryst_temp"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "gain",
+      "category": "Composition",
+      "n_features": 52,
+      "importance_sum": 0.3330733598,
+      "importance_ratio_pct": 33.30733658952426,
+      "mean_importance_per_feature": 0.006405256919230769,
+      "top_feature": "Gel_P_Si"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "gain",
+      "category": "OSDA",
+      "n_features": 46,
+      "importance_sum": 0.622789079,
+      "importance_ratio_pct": 62.27890903970403,
+      "mean_importance_per_feature": 0.013538893021739131,
+      "top_feature": "osda_min_bertz"
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "gain",
+      "category": "Synthesis Conditions",
+      "n_features": 6,
+      "importance_sum": 0.0441375429,
+      "importance_ratio_pct": 4.413754370771705,
+      "mean_importance_per_feature": 0.00735625715,
+      "top_feature": "seed"
+    }
+  ],
+  "consistency_matrix": [
+    {
+      "model": "XGBoost-104",
+      "method": "gain",
+      "Composition_pct": 33.30733658952426,
+      "OSDA_pct": 62.27890903970403,
+      "Synthesis_Conditions_pct": 4.413754370771705,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 0.5,
+      "spearman_vs_shap": 0.5,
+      "spearman_vs_attention": NaN
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "Composition_pct": 43.0783242258652,
+      "OSDA_pct": 42.71402550091074,
+      "Synthesis_Conditions_pct": 14.207650273224036,
+      "top_category": "Composition",
+      "rank_order": "Composition > OSDA > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": 1.0,
+      "spearman_vs_attention": NaN
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "Composition_pct": 44.70078058360927,
+      "OSDA_pct": 42.24875393186204,
+      "Synthesis_Conditions_pct": 13.05046548452869,
+      "top_category": "Composition",
+      "rank_order": "Composition > OSDA > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": 1.0,
+      "spearman_vs_attention": NaN
+    },
+    {
+      "model": "BiGRU",
+      "method": "attention",
+      "Composition_pct": 73.2866110060019,
+      "OSDA_pct": 24.52913225576222,
+      "Synthesis_Conditions_pct": 2.1842567382358657,
+      "top_category": "Composition",
+      "rank_order": "Composition > OSDA > Synthesis Conditions",
+      "spearman_vs_permutation": 0.5,
+      "spearman_vs_shap": 0.5,
+      "spearman_vs_attention": 1.0
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "Composition_pct": 33.76233376233377,
+      "OSDA_pct": 50.19305019305018,
+      "Synthesis_Conditions_pct": 16.044616044616046,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": 1.0,
+      "spearman_vs_attention": 0.5
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "Composition_pct": 28.145210086278148,
+      "OSDA_pct": 57.51053707446889,
+      "Synthesis_Conditions_pct": 14.344252839252972,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": 1.0,
+      "spearman_vs_attention": 0.5
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "attention",
+      "Composition_pct": 49.66696056459538,
+      "OSDA_pct": 43.82163057441025,
+      "Synthesis_Conditions_pct": 6.511408860994368,
+      "top_category": "Composition",
+      "rank_order": "Composition > OSDA > Synthesis Conditions",
+      "spearman_vs_permutation": 0.8660254037844387,
+      "spearman_vs_shap": 0.5,
+      "spearman_vs_attention": 1.0
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "Composition_pct": 41.162109375,
+      "OSDA_pct": 41.162109375,
+      "Synthesis_Conditions_pct": 17.67578125,
+      "top_category": "Composition",
+      "rank_order": "Composition > OSDA > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": 0.8660254037844387,
+      "spearman_vs_attention": 0.8660254037844387
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "Composition_pct": 35.02656196985927,
+      "OSDA_pct": 51.56175192174125,
+      "Synthesis_Conditions_pct": 13.411686108399486,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 0.8660254037844387,
+      "spearman_vs_shap": 1.0,
+      "spearman_vs_attention": 0.5
+    },
+    {
+      "model": "LeNet-5",
+      "method": "permutation",
+      "Composition_pct": 35.25747508305648,
+      "OSDA_pct": 47.965116279069775,
+      "Synthesis_Conditions_pct": 16.77740863787374,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": NaN,
+      "spearman_vs_attention": NaN
+    },
+    {
+      "model": "Transformer",
+      "method": "permutation",
+      "Composition_pct": 28.95839151075119,
+      "OSDA_pct": 56.4367495113097,
+      "Synthesis_Conditions_pct": 14.604858977939115,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": 1.0,
+      "spearman_vs_shap": NaN,
+      "spearman_vs_attention": NaN
+    },
+    {
+      "model": "TabNet",
+      "method": "attention",
+      "Composition_pct": 37.88223263664645,
+      "OSDA_pct": 47.16454343135616,
+      "Synthesis_Conditions_pct": 14.9532239319974,
+      "top_category": "OSDA",
+      "rank_order": "OSDA > Composition > Synthesis Conditions",
+      "spearman_vs_permutation": NaN,
+      "spearman_vs_shap": NaN,
+      "spearman_vs_attention": 1.0
+    }
+  ],
+  "acceptance": {
+    "criterion": "SHAP vs permutation category Spearman rho > 0.8 in >=2/3 models",
+    "evaluable_models": [
+      "XGBoost-104",
+      "BiGRU",
+      "FT-Transformer"
+    ],
+    "rho_by_model": {
+      "XGBoost-104": 1.0,
+      "BiGRU": 1.0,
+      "FT-Transformer": 0.8660254037844387
+    },
+    "n_pass": 3,
+    "n_evaluable": 3,
+    "passed": true,
+    "verdict": "Pass: the category ranking of SHAP and permutation importance agree (>=2/3 models rho>0.8); section 5.3 attribution upgraded to dual-method validation"
+  },
+  "runtime_sec": 58.1
+}

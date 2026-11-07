@@ -1,0 +1,55 @@
+{
+  "protocol": "D0-D6 (E10 pre-registered)",
+  "before": {
+    "train": 12537,
+    "val": 2640,
+    "test": 2641
+  },
+  "after": {
+    "train": 11543,
+    "val": 2312,
+    "test": 2277
+  },
+  "removed": {
+    "train": 994,
+    "val": 328,
+    "test": 364
+  },
+  "removed_detail": {
+    "train": {
+      "conflict": 322,
+      "cross_split_leak": 0,
+      "within_dup": 672
+    },
+    "val": {
+      "conflict": 66,
+      "cross_split_leak": 243,
+      "within_dup": 19
+    },
+    "test": {
+      "conflict": 65,
+      "cross_split_leak": 280,
+      "within_dup": 19
+    }
+  },
+  "total_before": 17818,
+  "total_after": 16132,
+  "n_unique_groups": 16294,
+  "anchors": {
+    "train_dup_groups": 617,
+    "train_dup_samples": 1458,
+    "train_conflict_groups": 104,
+    "train_conflict_samples": 266,
+    "test_train_dup": 294,
+    "test_train_conflict_strict": 33,
+    "test_train_conflict_any": 52,
+    "documented_test_dup": 209,
+    "documented_test_conflict": 26
+  },
+  "class_space": {
+    "n_classes": 231,
+    "n_train_classes": 231,
+    "n_valtest_classes": 147,
+    "missing_in_train": []
+  }
+}

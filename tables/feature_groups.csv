@@ -1,0 +1,10 @@
+group,dim,examples
+Gel element composition,45,"Si, Al, P, Na, K, Li, Ge, B, Ti, Zn, F"
+OSDA slot index,3,"osda1_index, osda2_index, osda3_index"
+Crystallization,4,"cryst_temp, cryst_time, seed, rotation"
+Aging,2,"aging_temp, aging_time"
+Acid/base,2,"acid, OH"
+Gel ratios,5,"Gel_Si_Al, Gel_P_Al, Gel_P_Si, H2O_T, OH_T"
+OSDA molecular descriptors,33,"Bertz complexity, free SASA, asphericity, axes, box, getaway"
+OSDA aggregates,10,"osda_min/max/avg_*, osda_total_volume"
+TOTAL,104,

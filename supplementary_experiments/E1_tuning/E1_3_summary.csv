@@ -1,0 +1,3 @@
+﻿exp_id,model,config_id,seed,fraction,n_params,train_val_gap,test_acc,test_precision_macro,test_recall_macro,test_macro_f1,test_weighted_f1,test_top3,test_top5,test_top10,head_f1,torso_f1,tail_f1,notes
+E1_3,Transformer,default_config,42,1.0,105639,0.0014,0.6535,0.5649,0.5671,0.5483,0.6397,0.8554,0.9167,0.9595,0.6188,0.5256,0.026,"original script default hyperparams, rerun under the unified protocol"
+E1_3,Transformer,tuned_trial43,42,1.0,2434279,0.0071,0.7762,0.6587,0.643,0.6351,0.7758,0.9212,0.9462,0.9655,0.7612,0.5973,0.039,"Optuna TPE 50 trials, val MacroF1=0.7196"

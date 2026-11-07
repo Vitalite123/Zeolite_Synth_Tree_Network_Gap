@@ -1,0 +1,553 @@
+{
+  "exp_id": "E9b",
+  "tag": "",
+  "seed": 42,
+  "device": "cuda",
+  "config": {
+    "n_explain": 384,
+    "n_bg": 64,
+    "nsamples": 32,
+    "perm_repeats": 3,
+    "b_shap": 1000,
+    "b_perm": 100
+  },
+  "groups8": {
+    "Element Composition": 45,
+    "OSDA Index": 3,
+    "Crystallization Conditions": 4,
+    "Aging Conditions": 2,
+    "pH Conditions": 2,
+    "Gel Ratios": 5,
+    "OSDA Descriptors": 33,
+    "OSDA Aggregates": 10
+  },
+  "anchors": [
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "Composition",
+      "e9_pct": 44.70078058360927,
+      "e9b_pct": 44.9323058730409,
+      "delta_pp": 0.2315252894316302,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "OSDA",
+      "e9_pct": 42.24875393186204,
+      "e9b_pct": 41.97018581678667,
+      "delta_pp": -0.27856811507537316,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "e9_pct": 13.05046548452869,
+      "e9b_pct": 13.09750831017242,
+      "delta_pp": 0.047042825643730524,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "Composition",
+      "e9_pct": 43.0783242258652,
+      "e9b_pct": 43.144424131627055,
+      "delta_pp": 0.06609990576185254,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "OSDA",
+      "e9_pct": 42.71402550091074,
+      "e9b_pct": 42.59597806215723,
+      "delta_pp": -0.1180474387535142,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "XGBoost-104",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "e9_pct": 14.207650273224036,
+      "e9b_pct": 14.259597806215716,
+      "delta_pp": 0.051947532991679424,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "Composition",
+      "e9_pct": 28.145210086278148,
+      "e9b_pct": 28.510894669547195,
+      "delta_pp": 0.3656845832690472,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "OSDA",
+      "e9_pct": 57.51053707446889,
+      "e9b_pct": 56.99078229655041,
+      "delta_pp": -0.5197547779184859,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "BiGRU",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "e9_pct": 14.344252839252972,
+      "e9b_pct": 14.498323033902373,
+      "delta_pp": 0.15407019464940142,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "Composition",
+      "e9_pct": 33.76233376233377,
+      "e9b_pct": 33.82036957455952,
+      "delta_pp": 0.0580358122257536,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "OSDA",
+      "e9_pct": 50.19305019305018,
+      "e9b_pct": 50.107434464976365,
+      "delta_pp": -0.08561572807381879,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "BiGRU",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "e9_pct": 16.044616044616046,
+      "e9b_pct": 16.072195960464118,
+      "delta_pp": 0.02757991584807229,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "Composition",
+      "e9_pct": 35.02656196985927,
+      "e9b_pct": 35.05942127902164,
+      "delta_pp": 0.03285930916236879,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "OSDA",
+      "e9_pct": 51.56175192174125,
+      "e9b_pct": 51.50783822090743,
+      "delta_pp": -0.0539137008338173,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "shap",
+      "category": "Synthesis Conditions",
+      "e9_pct": 13.411686108399486,
+      "e9b_pct": 13.432740500070928,
+      "delta_pp": 0.021054391671441408,
+      "tol_pp": 1.0
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "Composition",
+      "e9_pct": 41.162109375,
+      "e9b_pct": 41.396263520157326,
+      "delta_pp": 0.23415414515732635,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "OSDA",
+      "e9_pct": 41.162109375,
+      "e9b_pct": 40.806293018682396,
+      "delta_pp": -0.3558163563176038,
+      "tol_pp": 0.5
+    },
+    {
+      "model": "FT-Transformer",
+      "method": "permutation",
+      "category": "Synthesis Conditions",
+      "e9_pct": 17.67578125,
+      "e9b_pct": 17.797443461160277,
+      "delta_pp": 0.12166221116027742,
+      "tol_pp": 0.5
+    }
+  ],
+  "results": {
+    "XGBoost-104": {
+      "shap": [
+        27.46190927468108,
+        6.44158231670421,
+        10.533097856466881,
+        2.564410453705539,
+        2.0103836532407544,
+        15.46001294511907,
+        21.07534308186347,
+        14.453260418218987
+      ],
+      "permutation": [
+        28.336380255941513,
+        6.03290676416818,
+        11.882998171846426,
+        2.3765996343692906,
+        3.473491773308955,
+        11.33455210237659,
+        18.647166361974417,
+        17.91590493601463
+      ],
+      "group_shapley": [
+        26.033251040737685,
+        7.361866152993091,
+        10.689508055856791,
+        2.8986098350717953,
+        2.979350383477666,
+        15.277350922980625,
+        20.20925930057425,
+        14.550804308308123
+      ],
+      "group_shapley_eff_err": 4.440892098500626e-16,
+      "group_shapley_top": "Element Composition",
+      "attention_top": null,
+      "shap_top": "Element Composition",
+      "permutation_top": "Element Composition",
+      "pct3": {
+        "shap": [
+          44.9323058730409,
+          41.97018581678667,
+          13.09750831017242
+        ],
+        "permutation": [
+          43.144424131627055,
+          42.59597806215723,
+          14.259597806215716
+        ],
+        "group_shapley": [
+          44.28995234719598,
+          42.121929761875464,
+          13.588117890928586
+        ]
+      },
+      "top3": {
+        "shap": "Composition",
+        "permutation": "Composition",
+        "group_shapley": "Composition"
+      },
+      "group_shapley_top3": "Composition",
+      "attention_top3": null
+    },
+    "BiGRU": {
+      "shap": [
+        23.114278140127343,
+        6.688662123156882,
+        9.848562798308015,
+        4.649760235594359,
+        1.8599204118820276,
+        3.536696117537826,
+        30.82793099966428,
+        19.474189173729247
+      ],
+      "permutation": [
+        25.784271594327457,
+        9.411259131929523,
+        13.278899871078645,
+        2.793296089385474,
+        3.351955307262572,
+        4.684142672969491,
+        24.366136656639444,
+        16.330038676407394
+      ],
+      "group_shapley": [
+        26.508142406609753,
+        10.401346926870396,
+        12.317075589060572,
+        6.495233028795958,
+        4.214785027348015,
+        4.921364070345604,
+        18.372397477399765,
+        16.769655473569973
+      ],
+      "attention": [
+        68.11080377870373,
+        3.6408163224968146,
+        1.585570605518053,
+        0.5986865047730164,
+        0.5986865047730164,
+        4.577118900682728,
+        18.63435619019219,
+        2.2539611928605363
+      ],
+      "group_shapley_eff_err": 3.3306690738754696e-16,
+      "group_shapley_top": "Element Composition",
+      "attention_top": "Element Composition",
+      "shap_top": "OSDA Descriptors",
+      "permutation_top": "Element Composition",
+      "pct3": {
+        "shap": [
+          28.510894669547195,
+          56.99078229655041,
+          14.498323033902373
+        ],
+        "permutation": [
+          33.82036957455952,
+          50.107434464976365,
+          16.072195960464118
+        ],
+        "group_shapley": [
+          35.64429150430337,
+          45.54339987784013,
+          18.81230861785653
+        ],
+        "attention": [
+          73.28660918415947,
+          24.52913370554954,
+          2.1842571102910693
+        ]
+      },
+      "top3": {
+        "shap": "OSDA",
+        "permutation": "OSDA",
+        "group_shapley": "OSDA",
+        "attention": "Composition"
+      },
+      "group_shapley_top3": "OSDA",
+      "attention_top3": "Composition"
+    },
+    "FT-Transformer": {
+      "shap": [
+        29.538994617599048,
+        9.28633248970289,
+        9.603708762505088,
+        3.8290317375658405,
+        1.4305116020430377,
+        4.089915059379557,
+        25.65636831661165,
+        16.56513741459289
+      ],
+      "permutation": [
+        35.84070796460177,
+        10.963618485742376,
+        15.683382497541789,
+        2.114060963618487,
+        1.1799410029498525,
+        4.375614552605703,
+        15.240904621435595,
+        14.601769911504425
+      ],
+      "group_shapley": [
+        29.013326044698854,
+        9.908941189689815,
+        12.430392699448936,
+        5.750913992968663,
+        1.969240403421936,
+        5.24244686499435,
+        16.513654901053982,
+        19.17108390372343
+      ],
+      "attention": [
+        42.424171839529684,
+        3.522363689111746,
+        4.49190954231694,
+        2.020178705168364,
+        2.255871315329797,
+        4.984062497777033,
+        30.27386210127112,
+        10.027580309495265
+      ],
+      "group_shapley_eff_err": 6.661338147750939e-16,
+      "group_shapley_top": "Element Composition",
+      "attention_top": "Element Composition",
+      "shap_top": "Element Composition",
+      "permutation_top": "Element Composition",
+      "pct3": {
+        "shap": [
+          35.05942127902164,
+          51.50783822090743,
+          13.432740500070928
+        ],
+        "permutation": [
+          41.396263520157326,
+          40.806293018682396,
+          17.797443461160277
+        ],
+        "group_shapley": [
+          36.22501331311514,
+          45.59367999446722,
+          18.1813066924176
+        ],
+        "attention": [
+          49.664105652636515,
+          43.82380609987813,
+          6.512088247485305
+        ]
+      },
+      "top3": {
+        "shap": "OSDA",
+        "permutation": "Composition",
+        "group_shapley": "OSDA",
+        "attention": "Composition"
+      },
+      "group_shapley_top3": "OSDA",
+      "attention_top3": "Composition"
+    }
+  },
+  "rho8": [
+    {
+      "model": "XGBoost-104",
+      "method_a": "group_shapley",
+      "method_b": "permutation",
+      "rho8": 0.9285714285714287,
+      "ci_lo": 0.7936445578538948,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 100
+    },
+    {
+      "model": "XGBoost-104",
+      "method_a": "group_shapley",
+      "method_b": "shap",
+      "rho8": 0.9761904761904763,
+      "ci_lo": 0.9523809523809524,
+      "ci_hi": 1.0,
+      "n_boot": 1000
+    },
+    {
+      "model": "XGBoost-104",
+      "method_a": "shap",
+      "method_b": "permutation",
+      "rho8": 0.9047619047619048,
+      "ci_lo": 0.7857142857142858,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 100
+    },
+    {
+      "model": "BiGRU",
+      "method_a": "attention",
+      "method_b": "permutation",
+      "rho8": 0.7784570702436183,
+      "ci_lo": 0.5976155046947162,
+      "ci_hi": 0.7831325301204818,
+      "n_boot": 100
+    },
+    {
+      "model": "BiGRU",
+      "method_a": "group_shapley",
+      "method_b": "permutation",
+      "rho8": 0.9285714285714287,
+      "ci_lo": 0.880952380952381,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 100
+    },
+    {
+      "model": "BiGRU",
+      "method_a": "group_shapley",
+      "method_b": "shap",
+      "rho8": 0.9761904761904763,
+      "ci_lo": 0.9523809523809524,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 1000
+    },
+    {
+      "model": "BiGRU",
+      "method_a": "attention",
+      "method_b": "shap",
+      "rho8": 0.6467181814331598,
+      "ci_lo": 0.6467181814331598,
+      "ci_hi": 0.6467181814331598,
+      "n_boot": 1000
+    },
+    {
+      "model": "BiGRU",
+      "method_a": "shap",
+      "method_b": "permutation",
+      "rho8": 0.9047619047619048,
+      "ci_lo": 0.8571428571428572,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 100
+    },
+    {
+      "model": "FT-Transformer",
+      "method_a": "attention",
+      "method_b": "permutation",
+      "rho8": 0.7857142857142858,
+      "ci_lo": 0.6666666666666669,
+      "ci_hi": 0.9047619047619048,
+      "n_boot": 100
+    },
+    {
+      "model": "FT-Transformer",
+      "method_a": "group_shapley",
+      "method_b": "permutation",
+      "rho8": 0.880952380952381,
+      "ci_lo": 0.8333333333333335,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 100
+    },
+    {
+      "model": "FT-Transformer",
+      "method_a": "group_shapley",
+      "method_b": "shap",
+      "rho8": 0.9523809523809524,
+      "ci_lo": 0.9285714285714287,
+      "ci_hi": 0.9761904761904763,
+      "n_boot": 1000
+    },
+    {
+      "model": "FT-Transformer",
+      "method_a": "attention",
+      "method_b": "shap",
+      "rho8": 0.9047619047619048,
+      "ci_lo": 0.7857142857142858,
+      "ci_hi": 0.9047619047619048,
+      "n_boot": 1000
+    },
+    {
+      "model": "FT-Transformer",
+      "method_a": "shap",
+      "method_b": "permutation",
+      "rho8": 0.9285714285714287,
+      "ci_lo": 0.8095238095238096,
+      "ci_hi": 1.0,
+      "n_boot": 100
+    }
+  ],
+  "verdicts": {
+    "R1_8class_dual_method": {
+      "pass": 3,
+      "n": 3,
+      "text": "Under the 8-category convention, dual-method validation holds (>=2/3 models rho>0.8)"
+    },
+    "R2_osda_gap_ci": {
+      "pass": 2,
+      "n": 3,
+      "text": "SHAP OSDA advantage CI lower bound >0 (>=2/3 models); keep the OSDA-dominance wording"
+    },
+    "R3_group_shapley": {
+      "pass": 2,
+      "n": 3,
+      "text": "Models whose group-level Shapley (3-category) top category is OSDA with rho8>0.8: 2/3; OSDA dominance gains a third architecture-independent method's support"
+    },
+    "R4_attention_8class": {
+      "pass": 2,
+      "n": 2,
+      "text": "Under 3-category aggregation, models whose top attention category is Composition: 2/2 (models with attention attribution): maintain section 5.4.4 (attention != feature contribution)"
+    }
+  },
+  "runtime_sec": 791.1,
+  "anchor_tol_pp": {
+    "shap_xgb": 0.5,
+    "shap_neural": 1.0,
+    "permutation": 0.5,
+    "attention": 0.1
+  }
+}

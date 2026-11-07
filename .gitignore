@@ -1,0 +1,3 @@
+# Large binary artifacts are published as GitHub Release assets (v1.0), not tracked in git.
+supplementary_experiments/E8_stacking/E8_oof_ms_seed*.npz
+supplementary_experiments/E1_tuning/tuned_model.json

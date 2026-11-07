@@ -1,0 +1,3 @@
+﻿exp_id,model,config_id,seed,fraction,n_params,train_val_gap,test_acc,test_macro_f1,test_weighted_f1,test_top5,head_f1,torso_f1,tail_f1,notes
+E1.4,XGBoost-104,baseline_default,42,1.0,,-0.0016,0.8315,0.7397,0.8278,0.9716,,,,Baseline104 default params reproduction
+E1.4,XGBoost-104,tuned_trial38,42,1.0,,-0.0039,0.8353,0.7247,0.833,0.9746,,,,"Optuna TPE 50trials, val MacroF1=0.7885"

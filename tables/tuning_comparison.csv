@@ -1,0 +1,9 @@
+model,default_acc,default_macro_f1,tuned_acc,tuned_macro_f1,delta_acc_pp,delta_macro_f1_pp,trials,best_val_macro_f1,complete,pruned,tuned_top5,note
+XGBoost-104,83.15,73.97,83.53,72.47,+0.38,-1.50,50,,,,"default near search-space ceiling; tuning shifted toward majority classes"
+BiGRU,77.55,65.40,79.33,68.01,+1.78,+2.61,50,0.7475,31,19,0.9459,best trial: hidden 256 / 1 layer / attn 256 (1.18 M params)
+Transformer,65.35,54.83,77.62,63.51,+12.27,+8.68,50,0.7196,29,21,0.9462,default d_model 64 (106 k params) severely underparameterized
+LeNet-5,76.11,63.42,75.58,65.04,-0.53,+1.62,50,0.7132,28,22,0.9485,tuning traded accuracy for tail F1 (0.026 to 0.039)
+FT-Transformer,,,78.83,67.38,,,50,0.7188,27,23,95.30,E2.1; 489735 params
+TabNet,,,69.86,56.20,,,50,0.6005,,,92.43,E2.2; batch 128 to 512 gave +13.25 pp
+MLP,,,75.96,64.20,,,25,0.7010,,,,E2.3 prior-free reference
+ResNet,,,78.61,65.31,,,25,0.7162,,,,E2.3 prior-free reference

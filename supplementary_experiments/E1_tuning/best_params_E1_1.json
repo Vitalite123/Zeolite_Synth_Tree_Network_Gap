@@ -1,0 +1,13 @@
+{
+  "exp_id": "E1.1",
+  "best_trial": 20,
+  "params": {
+    "learning_rate": 0.00222335766260956,
+    "dropout_rate": 0.41606330913945944,
+    "batch_size": 256,
+    "conv_channels": "64-128-256",
+    "weight_decay": 1.5486219320045795e-05
+  },
+  "val_macro_f1": 0.7132059730053301,
+  "n_params": 3739111
+}

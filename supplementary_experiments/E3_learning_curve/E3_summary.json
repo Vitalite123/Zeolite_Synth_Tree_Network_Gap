@@ -1,0 +1,99 @@
+{
+  "test_acc": {
+    "n0": 12537.0,
+    "n_min": 1326.0,
+    "xgb": {
+      "a": -0.189263,
+      "b": 0.109358,
+      "r2": 0.9828,
+      "plateau": false,
+      "last_gain_pp": 2.25,
+      "c": 0.8326333333333333
+    },
+    "ann": {
+      "a": -0.241131,
+      "b": 0.111255,
+      "r2": 0.9891,
+      "plateau": false,
+      "last_gain_pp": 2.21,
+      "c": 0.7985666666666668,
+      "n_star": 14040.782064751544
+    },
+    "n_star": 14040.782064751544,
+    "n_star_formula": 15543.23014408256,
+    "ci": [
+      13521.220753685899,
+      14624.323351585103
+    ],
+    "note": "R-squared>=0.9; XGBoost plateau=False; XGBoost has not plateaued, so N* does not satisfy the plan's plateau premise and only means catching up to the current level",
+    "slope_diff": 0.001897,
+    "slope_ci": [
+      -0.003194493293069847,
+      0.006538600878173709
+    ],
+    "p_slope_pos": 0.761,
+    "joint_cross_log10": 9.566090976203125,
+    "joint_cross_log10_ci": [
+      6.119562882025518,
+      120.71554503104271
+    ],
+    "gap_pp_at_scale": {
+      "1x": 3.4,
+      "2x": 3.27,
+      "5x": 3.09,
+      "10x": 2.96
+    }
+  },
+  "val_acc": {
+    "n0": 12537.0,
+    "n_min": 1326.0,
+    "xgb": {
+      "a": -0.20912,
+      "b": 0.11153,
+      "r2": 0.9889,
+      "plateau": false,
+      "last_gain_pp": 1.96,
+      "c": 0.8325666666666667
+    },
+    "ann": {
+      "a": -0.266068,
+      "b": 0.114376,
+      "r2": 0.9847,
+      "plateau": false,
+      "last_gain_pp": 2.73,
+      "c": 0.8038,
+      "n_star": 13618.441566543435
+    },
+    "n_star": 13618.441566543435,
+    "n_star_formula": 14845.692220271598,
+    "ci": [
+      13051.535889460503,
+      14306.080133952215
+    ],
+    "note": "R-squared>=0.9; XGBoost plateau=False; XGBoost has not plateaued, so N* does not satisfy the plan's plateau premise and only means catching up to the current level",
+    "slope_diff": 0.002846,
+    "slope_ci": [
+      -0.0028168530570385148,
+      0.008845817604300199
+    ],
+    "p_slope_pos": 0.79,
+    "joint_cross_log10": 7.77720332867125,
+    "joint_cross_log10_ci": [
+      5.380057442772043,
+      63.83909915480017
+    ],
+    "gap_pp_at_scale": {
+      "1x": 3.01,
+      "2x": 2.81,
+      "5x": 2.55,
+      "10x": 2.35
+    }
+  },
+  "realistic": {
+    "d_needed": 51292.0,
+    "years_opt": 24.8,
+    "years_con": 64.6,
+    "g_recent": 1103.7,
+    "g_all": 423.2
+  }
+}

@@ -1,0 +1,33 @@
+analysis,model,metric,value,ci_low,ci_high,note
+permutation_3supergroup,BiGRU,OSDA_share_pct,48.5,,,Composition 52 / OSDA 46 / Condition 6 features
+permutation_3supergroup,Transformer,OSDA_share_pct,48.1,,,
+permutation_3supergroup,LeNet-5,OSDA_share_pct,40.7,,,Composition 39.2 (near tie)
+permutation_3supergroup,XGBoost,top_features,osda1_index; osda2_index; Si,,,
+rho_3class_shap_vs_permutation,XGBoost,Spearman_rho,1.000,,,TreeSHAP (pred_contribs)
+rho_3class_shap_vs_permutation,BiGRU,Spearman_rho,1.000,,,GradientSHAP ns=32
+rho_3class_shap_vs_permutation,FT-Transformer,Spearman_rho,0.866,,,acceptance threshold >= 0.8; 3/3 passed
+rho_8class_shap_vs_permutation,XGBoost,Spearman_rho8,0.905,0.786,0.976,B=1000 bootstrap
+rho_8class_shap_vs_permutation,BiGRU,Spearman_rho8,0.905,0.857,0.976,anchor max |delta| 0.52 pp (GradientSHAP)
+rho_8class_shap_vs_permutation,FT-Transformer,Spearman_rho8,0.929,0.810,1.000,
+osda_minus_composition_shap,BiGRU,pp,29.37,26.90,31.72,8-group bootstrap; CI excludes zero
+osda_minus_composition_shap,FT-Transformer,pp,16.53,13.97,18.98,CI excludes zero
+osda_minus_composition_shap,XGBoost,pp,-2.45,-5.86,1.01,CI spans zero; OSDA-first limited to networks
+group_shapley_top_group,BiGRU,share_pct,45.5,,,OSDA Descriptors; exact 2^8 coalitions; efficiency err <= 6.7e-16
+group_shapley_top_group,FT-Transformer,share_pct,45.6,,,OSDA Descriptors
+group_shapley_top_group,XGBoost,share_pct,44.3,,,Element Composition
+local_osda_dominant_samples,BiGRU,pct,91.9,89.1,94.5,per-sample SHAP on 384-record explanation set
+local_osda_dominant_samples,FT-Transformer,pct,74.7,70.6,79.2,
+local_osda_dominant_samples,XGBoost,pct,47.1,41.9,52.3,below majority
+delta_osda_misclass_minus_correct,XGBoost,pp,-4.13,-7.77,-0.22,only nominally significant; direction opposite to error-link claim
+delta_osda_misclass_minus_correct,BiGRU,pp,0.94,-1.50,3.33,CI spans zero
+delta_osda_misclass_minus_correct,FT-Transformer,pp,-1.57,-4.47,1.40,CI spans zero
+error_modal_group,XGBoost,Element Composition,40.9,,,same mode as correct predictions; no error-specific shift
+error_modal_group,BiGRU,OSDA Descriptors,65.7,,,
+error_modal_group,FT-Transformer,Element Composition,56.3,,,
+attention_vs_contribution,BiGRU,attention_Composition_pct,73.3,,,disagrees with permutation and SHAP (OSDA-first)
+attention_vs_contribution,FT-Transformer,attention_Composition_pct,49.7,,,disagrees with SHAP
+attention_vs_contribution,TabNet,mask_element_osda_condition_pct,37.9/47.2/14.9,,,decision masks rank with permutation importance
+xgb_gain_vs_shap,XGBoost,gain_OSDA_pct,62.3,,,~20 pp above SHAP/permutation values (42-43%); magnitude method-dependent
+shap_fidelity,BiGRU,feature_level_Spearman,0.690,,,GradientSHAP ns=32 vs official GradientExplainer ns=256
+shap_fidelity,FT-Transformer,feature_level_Spearman,0.720,,,
+eight_group_resolution,all,cells_with_Element_Composition_largest,7_of_9,,,OSDA dominance is a 46-dim aggregate statement

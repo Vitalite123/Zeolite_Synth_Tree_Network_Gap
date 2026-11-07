@@ -1,0 +1,13 @@
+model,method,Composition_pct,OSDA_pct,Synthesis_Conditions_pct,top_category,rank_order,spearman_vs_permutation,spearman_vs_shap,spearman_vs_attention
+XGBoost-104,gain,33.30733658952426,62.27890903970403,4.413754370771705,OSDA,OSDA > Composition > Synthesis Conditions,0.5,0.5,
+XGBoost-104,permutation,43.0783242258652,42.71402550091074,14.207650273224036,Composition,Composition > OSDA > Synthesis Conditions,1.0,1.0,
+XGBoost-104,shap,44.70078058360927,42.24875393186204,13.05046548452869,Composition,Composition > OSDA > Synthesis Conditions,1.0,1.0,
+BiGRU,attention,73.2866110060019,24.52913225576222,2.1842567382358657,Composition,Composition > OSDA > Synthesis Conditions,0.5,0.5,1.0
+BiGRU,permutation,33.76233376233377,50.19305019305018,16.044616044616046,OSDA,OSDA > Composition > Synthesis Conditions,1.0,1.0,0.5
+BiGRU,shap,28.145210086278148,57.51053707446889,14.344252839252972,OSDA,OSDA > Composition > Synthesis Conditions,1.0,1.0,0.5
+FT-Transformer,attention,49.66696056459538,43.82163057441025,6.511408860994368,Composition,Composition > OSDA > Synthesis Conditions,0.8660254037844387,0.5,1.0
+FT-Transformer,permutation,41.162109375,41.162109375,17.67578125,Composition,Composition > OSDA > Synthesis Conditions,1.0,0.8660254037844387,0.8660254037844387
+FT-Transformer,shap,35.02656196985927,51.56175192174125,13.411686108399486,OSDA,OSDA > Composition > Synthesis Conditions,0.8660254037844387,1.0,0.5
+LeNet-5,permutation,35.25747508305648,47.965116279069775,16.77740863787374,OSDA,OSDA > Composition > Synthesis Conditions,1.0,,
+Transformer,permutation,28.95839151075119,56.4367495113097,14.604858977939115,OSDA,OSDA > Composition > Synthesis Conditions,1.0,,
+TabNet,attention,37.88223263664645,47.16454343135616,14.9532239319974,OSDA,OSDA > Composition > Synthesis Conditions,,,1.0

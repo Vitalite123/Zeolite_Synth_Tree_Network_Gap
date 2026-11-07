@@ -1,0 +1,7 @@
+model,attention,gain,shap
+XGBoost-104,,0.5,1.0
+BiGRU,0.5,,1.0
+FT-Transformer,0.8660254037844387,,0.8660254037844387
+LeNet-5,,,
+Transformer,,,
+TabNet,,,

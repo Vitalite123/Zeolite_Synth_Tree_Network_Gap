@@ -1,0 +1,27 @@
+{
+  "MLP": {
+    "trial": 21,
+    "val_macro_f1": 0.7009672393659391,
+    "params": {
+      "n_layers": 3,
+      "width": 512,
+      "dropout": 0.22558030179636296,
+      "lr": 0.0009462086834762758,
+      "weight_decay": 5.890074892732708e-06,
+      "batch_size": 256
+    }
+  },
+  "ResNet": {
+    "trial": 21,
+    "val_macro_f1": 0.7161754906193758,
+    "params": {
+      "d_main": 256,
+      "n_blocks": 4,
+      "dropout_first": 0.08566448634026287,
+      "dropout_second": 0.06850986312661726,
+      "lr": 0.00039768232127182013,
+      "weight_decay": 0.00029778078918976463,
+      "batch_size": 512
+    }
+  }
+}

@@ -1,0 +1,15 @@
+model,delta_acc_pp,ci_low_acc,ci_high_acc,delta_macro_f1_pp,ci_low_f1,ci_high_f1,mcnemar_chi2_seed42,mcnemar_holm_p,wilcoxon_median_delta_f1_pp,wilcoxon_holm_p,reference
+XGBoost-104 vs BiGRU,-3.62,-4.62,-2.62,-4.25,-5.47,-3.03,41.58,<1e-300,-4.05,3.12e-05,XGBoost-104
+XGBoost-104 vs FT-Transformer,-5.20,-5.75,-4.66,-6.58,-8.49,-4.66,44.81,<1e-300,,<1e-300,XGBoost-104
+XGBoost-104 vs LeNet-5,-6.73,-7.91,-5.55,-7.24,-8.38,-6.09,65.70,<1e-300,,<1e-300,XGBoost-104
+XGBoost-104 vs Transformer,-7.35,-9.10,-5.61,-10.06,-11.35,-8.77,73.25,<1e-300,,<1e-300,XGBoost-104
+XGBoost-104 vs TabNet,-15.47,-17.46,-13.48,-18.57,-22.13,-15.00,231.84,<1e-300,,<1e-300,XGBoost-104
+E3 slope BiGRU-XGBoost,+0.0019,-0.0032,+0.0065,,,,,,,,bootstrap CI on log-linear slope b per ln N; indistinguishable from zero
+E3b clean-vs-dirty gap change,+5.93,+3.96,+7.95,,,,,,,,XGB-BiGRU gap: 0.33 pp (clean n=917) vs 6.26 pp (dirty n=1724)
+E3b purity x model interaction,+6.03,+2.97,+9.25,,,,,,,,BiGRU degrades ~6 pp faster than XGBoost as label purity drops
+E5 weighted-CE tail F1,+1.79,-0.47,+4.06,,,,,,,,only Pareto point; CI spans zero (directional evidence)
+E6 random-perm vs chem order,-0.41,-1.42,+0.60,,,,,,,,CI spans zero; granularity scan (104x1/52x2/26x4/13x8) Acc range 0.86 pp
+E8 stacking foldavg vs E4 XGB,-0.43,-0.63,-0.23,,,,,,,,per-seed all negative; guardrails 0/5
+E8c weighted_avg4 vs E4 XGB,-0.23,-0.65,+0.19,,,,,,,,new base family (GINE) branch not supported
+E11 branch B2: Transformer,-0.66,,,,,,,,,exceeds 0.5 pp threshold; ranking unchanged
+E11 branch B2: TabNet,-1.90,,,,,,,,,exceeds 0.5 pp threshold; ranking unchanged

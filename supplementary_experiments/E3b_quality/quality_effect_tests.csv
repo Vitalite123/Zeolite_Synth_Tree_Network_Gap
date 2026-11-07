@@ -1,0 +1,11 @@
+﻿contrast,model,delta_pp,ci_low_pp,ci_high_pp,note
+5NN pure -> impure,XGBoost-104,25.16,23.06,27.28,
+5NN pure -> impure,BiGRU,31.19,28.97,33.52,
+5NN pure -> impure,Interaction (ANN drop - XGB drop),6.03,2.97,9.25,positive = ANN more sensitive to neighborhood ambiguity
+features complete → 11 missing,XGBoost-104,10.55,2.95,18.77,
+features complete → 11 missing,BiGRU,8.67,1.06,16.93,
+features complete → 11 missing,interaction (ANN drop − XGB drop),-1.88,-12.93,9.78,
+clean → not clean,XGBoost-104,24.76,22.8,26.87,
+clean → not clean,BiGRU,30.67,28.46,32.85,
+clean → not clean,interaction (ANN drop − XGB drop),5.92,2.91,8.92,
+Gap(XGB−ANN): impure - clean,model gap change,5.93,3.96,7.95,positive = gap concentrated on impure samples

@@ -1,0 +1,9 @@
+model,acc_e4_mean,acc_e4_std,macro_f1_e4_mean,macro_f1_e4_std,top5_e4_mean,top5_e4_std,head_f1_e4,torso_f1_e4,tail_f1_e4,acc_e11_dedup_mean,acc_e11_dedup_std,delta_total_e11_pp,params_M,note
+XGBoost-104,83.33,0.22,72.73,0.69,97.30,0.12,82.26,64.69,1.30,83.12,0.14,-0.21,,tuned 50 Optuna trials (E1.4)
+BiGRU,79.71,0.61,68.49,0.91,95.59,0.59,78.17,62.35,3.90,79.49,0.46,-0.22,1.18,tuned (E1.2); best network
+FT-Transformer,78.13,0.63,66.16,1.57,95.21,0.33,75.82,61.49,3.38,78.12,0.87,-0.01,0.49,tuned (E2.1)
+LeNet-5,76.60,1.06,65.50,0.26,95.37,0.25,73.95,63.22,3.64,76.10,0.97,-0.50,3.74,tuned (E1.1)
+Transformer,75.98,1.45,62.67,1.18,94.36,0.23,73.90,57.56,3.38,75.32,1.83,-0.66,2.43,tuned (E1.3)
+TabNet,67.86,1.62,54.17,2.89,91.69,0.72,64.31,52.51,2.34,65.96,1.89,-1.90,0.18,tuned (E2.2)
+LightGBM-104,82.51,,71.66,,,,,,,82.48,,,1 seed; reproduced within 0.03 pp
+RandomForest-104,80.50,,70.44,,,,,,,68.69,,,historical value; not reproducible under frozen protocol (70.05% original split)

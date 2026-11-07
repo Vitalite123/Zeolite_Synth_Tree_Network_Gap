@@ -1,0 +1,15 @@
+{
+  "exp_id": "E1.2",
+  "best_trial": 25,
+  "params": {
+    "hidden_size": 256,
+    "num_layers": 1,
+    "learning_rate": 0.002815152922508918,
+    "dropout_rate": 0.29342924120677805,
+    "batch_size": 128,
+    "attention_dim": 256,
+    "weight_decay": 0.00033695193961323145
+  },
+  "val_macro_f1": 0.7474723077596761,
+  "n_params": 1180008
+}

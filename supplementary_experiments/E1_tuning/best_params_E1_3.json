@@ -1,0 +1,16 @@
+{
+  "exp_id": "E1.3",
+  "best_trial": 43,
+  "params": {
+    "d_model": 256,
+    "nhead": 4,
+    "num_layers": 3,
+    "dim_feedforward_mult": 4,
+    "learning_rate": 0.0006311793721946044,
+    "warmup_ratio": 0.1,
+    "dropout_rate": 0.10048377459650178,
+    "batch_size": 256
+  },
+  "val_macro_f1": 0.7196465018786466,
+  "n_params": 2434279
+}
